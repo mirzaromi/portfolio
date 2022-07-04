@@ -8,8 +8,10 @@ header {
   width: 100%;
   height: 60px;
   background-color: #FFFFFF;
-  border: 1px solid black;
   color: #000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 header nav {
   height: inherit;
@@ -40,11 +42,55 @@ header nav a li {
   font-size: 16px;
   color: #000;
 }
+header nav svg {
+  display: none;
+}
+
+body {
+  background-color: #F5F5F5;
+}
 
 .home {
   max-width: 1440px;
+  height: 94vh;
   box-sizing: border-box;
-  margin: auto;
+  margin: auto 10%;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .home-content {
+  margin-left: 100px;
+}
+.home .home-content h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+.home .home-content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 1rem;
+}
+.home .home-content button {
+  width: 200px;
+  height: 50px;
+  background: #44DFC4;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 425px) {
@@ -52,7 +98,6 @@ header nav a li {
     width: 100%;
     height: 60px;
     background-color: #FFFFFF;
-    border: 1px solid black;
     color: #000;
   }
   header nav {
@@ -70,5 +115,63 @@ header nav a li {
   }
   header nav ul {
     display: none;
+  }
+  header nav svg {
+    display: inline-block;
+  }
+
+  body {
+    background-color: #F5F5F5;
+  }
+
+  .home {
+    max-width: 425px;
+    height: 94vh;
+    box-sizing: border-box;
+    margin: 0px 10%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .home-img img {
+    width: 70%;
+    height: auto;
+    margin: 0px auto 2rem auto;
+    display: block;
+  }
+  .home .home-content {
+    margin: 0px;
+    text-align: center;
+  }
+  .home .home-content h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+  .home .home-content p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+  }
+  .home .home-content button {
+    width: 200px;
+    height: 50px;
+    background: #44DFC4;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
   }
 }/*# sourceMappingURL=main.css.map */
