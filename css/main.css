@@ -8,7 +8,7 @@ header {
   width: 100%;
   height: 60px;
   background-color: #FFFFFF;
-  color: #000;
+  color: #333;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -40,7 +40,7 @@ header nav a li {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: #000;
+  color: #333;
 }
 header nav svg {
   display: none;
@@ -48,6 +48,11 @@ header nav svg {
 
 body {
   background-color: #F5F5F5;
+}
+body h1,
+body h2,
+body p {
+  color: #333;
 }
 
 .home {
@@ -66,7 +71,7 @@ body {
 .home .home-content h1 {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 50px;
   line-height: 1.25;
   margin-bottom: 1rem;
@@ -93,12 +98,121 @@ body {
   line-height: 24px;
 }
 
+.skills {
+  max-width: 1440px;
+  height: 94vh;
+  box-sizing: border-box;
+  margin: auto 10%;
+  background-color: #F5F5F5;
+  height: auto !important;
+  padding: 2.5% 5%;
+}
+.skills .skills-title {
+  margin-bottom: 2rem;
+}
+.skills .skills-title h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #44DFC4;
+}
+.skills .skills-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .skills-flex .skills-content h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+.skills .skills-flex .skills-content .skills-lists .skills-lists-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-lists-image {
+  width: 50px;
+  height: 50px;
+  background: #E6F4F5;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-lists-image svg {
+  display: block;
+  margin: 2px auto 0px auto;
+}
+.skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-list-desc {
+  width: 80%;
+}
+.skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-list-desc h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 0.75rem;
+}
+.skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-list-desc p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.portfolio {
+  max-width: 1440px;
+  height: 94vh;
+  box-sizing: border-box;
+  margin: auto 10%;
+  background-color: #F5F5F5;
+  padding: 2.5% 5%;
+}
+.portfolio h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #44DFC4;
+  padding-left: 236px;
+}
+.portfolio .portfolio-container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  padding-left: 236px;
+}
+.portfolio .portfolio-container img {
+  width: 100%;
+  display: block;
+  margin: 2.5% auto;
+}
+.portfolio .portfolio-container button {
+  width: 200px;
+  height: 50px;
+  background: #44DFC4;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  margin: auto;
+}
+
 @media only screen and (max-width: 425px) {
   header {
     width: 100%;
     height: 60px;
     background-color: #FFFFFF;
-    color: #000;
+    color: #333;
   }
   header nav {
     height: inherit;
@@ -125,10 +239,10 @@ body {
   }
 
   .home {
-    max-width: 425px;
+    max-width: 1440px;
     height: 94vh;
     box-sizing: border-box;
-    margin: 0px 10%;
+    margin: auto 10%;
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -162,8 +276,8 @@ body {
     margin-bottom: 1rem;
   }
   .home .home-content button {
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     background: #44DFC4;
     border-radius: 50px;
     border: none;
@@ -173,5 +287,123 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .skills {
+    max-width: 1440px;
+    height: 94vh;
+    box-sizing: border-box;
+    margin: auto 10%;
+    background-color: #F5F5F5;
+    height: auto !important;
+    padding: 2.5% 0%;
+  }
+  .skills .skills-title {
+    margin-bottom: 0.5rem;
+  }
+  .skills .skills-title h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #44DFC4;
+  }
+  .skills .skills-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .skills .skills-flex .skills-content h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .skills .skills-flex .skills-content .skills-lists .skills-lists-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-lists-image {
+    width: 50px;
+    height: 50px;
+    background: #E6F4F5;
+    box-sizing: border-box;
+    border-radius: 50px;
+  }
+  .skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-lists-image svg {
+    display: block;
+    margin: 2px auto 0px auto;
+  }
+  .skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-list-desc {
+    width: 80%;
+  }
+  .skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-list-desc h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+  .skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-list-desc p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .skills .skills-flex .skills-img {
+    display: none;
+  }
+
+  .portfolio {
+    max-width: 1440px;
+    height: 94vh;
+    box-sizing: border-box;
+    margin: auto 10%;
+    background-color: #F5F5F5;
+    height: auto !important;
+    padding: 2.5% 0%;
+  }
+  .portfolio h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #44DFC4;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .portfolio .portfolio-container h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .portfolio .portfolio-container img {
+    width: 100%;
+    display: block;
+    margin: 10% auto;
+  }
+  .portfolio .portfolio-container button {
+    width: 150px;
+    height: 40px;
+    background: #44DFC4;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin: auto;
   }
 }/*# sourceMappingURL=main.css.map */
