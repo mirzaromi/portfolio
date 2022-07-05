@@ -503,6 +503,32 @@ header .mobile-menu {
     font-size: 16px;
     padding-bottom: 20px;
   }
+  header .mobile-menu .mobile-footer {
+    position: absolute;
+    bottom: 0px;
+    padding: 20px 0px;
+  }
+  header .mobile-menu .mobile-footer h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+  }
+  header .mobile-menu .mobile-footer ul {
+    display: flex;
+    padding-bottom: 0px;
+  }
+  header .mobile-menu .mobile-footer ul li {
+    margin-right: 10px;
+  }
+  header .mobile-menu .mobile-footer p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+  }
 }
 @media only screen and (max-width: 425px) {
   .home {
