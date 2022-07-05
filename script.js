@@ -16,3 +16,12 @@ const closeClick = () => {
 
 hamburger.addEventListener("click", hamburgerClick);
 close.addEventListener("click", closeClick);
+
+window.addEventListener('mouseup', function(event){
+	const box = document.getElementById('mobile-menu');
+	if (event.target != box && event.target.parentNode != box){
+        mobileMenu.style.left = '-255px';
+        hamburger.style.display = 'block';
+        close.style.display = 'none';
+    }
+});
