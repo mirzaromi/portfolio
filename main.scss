@@ -98,6 +98,10 @@ header {
         }
 
     }
+
+    .mobile-menu {
+        display: none;
+    }
 }
 
 body {
@@ -168,7 +172,7 @@ body {
 
             h1 {
                 @include sectionHeading(24px);
-
+                margin-bottom: 2rem;
             }
 
             .skills-lists {
@@ -179,6 +183,7 @@ body {
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 1rem;
+                    padding-right: 20px;
 
                     .skills-lists-image {
                         width: 50px;
@@ -346,6 +351,7 @@ body {
             form {
                 position: relative;
                 height: auto;
+                z-index: 0;
 
                 .email {
                     width: 60%;
@@ -393,9 +399,9 @@ body {
                 button {
                     @include button(200px, 50px, 16px);
                     display: inline;
-                    z-index: 2;
+                    z-index: 1;
                     position: absolute;
-                    right: 216px;
+                    right: 20%;
                     top: 9px;
                 }
             }
@@ -437,6 +443,7 @@ body {
                     list-style-type: none;
                     display: inline;
                     padding-left: 15px;
+
                     svg {
                         width: 24px;
                     }
@@ -466,7 +473,7 @@ body {
             color: #FFFFFF;
             text-align: center;
             padding: 15px;
-            
+
         }
 
     }
@@ -482,6 +489,9 @@ body {
         background-color: #FFFFFF;
         // border: 1px solid black;
         color: $text-color;
+        // position: --webkit-sticky;
+        // position: sticky;
+        z-index: 10;
 
         nav {
             height: inherit;
@@ -506,6 +516,51 @@ body {
                 display: inline-block;
             }
 
+        }
+
+        .mobile-menu {
+            display: block;
+            width: 255px;
+            height: 100vh;
+            background-color: #36af9b;
+            z-index: 100;
+            top: 0px;
+            left: -255px;
+            padding: 5%;
+            position: absolute;
+            box-sizing: border-box;
+            transition: 0.5s;
+            
+            // margin-top: -60px;
+
+            h1 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+
+            ul {
+
+                padding: 20px 0px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    li {
+                        display: block;
+                        list-style-type: none;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
         }
     }
 
@@ -845,11 +900,11 @@ body {
         // margin: auto 10%;
         padding: 5% 15%;
         background-color: #44DFC4;
-    
+
         .footer-content {
             display: flex;
             justify-content: space-between;
-    
+
             h1 {
                 font-family: 'Inter';
                 font-style: normal;
@@ -857,31 +912,32 @@ body {
                 font-size: 21px;
                 color: #FFFFFF;
             }
-    
+
             .footer-icon {
-    
+
                 ul {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
 
-    
+
                     li {
                         list-style-type: none;
                         display: inline;
                         padding-left: 15px;
+
                         svg {
                             width: 24px;
                         }
                     }
                 }
-    
+
             }
-    
-    
-    
+
+
+
         }
-    
+
         .footer-copyrights {
             margin: auto;
             height: 120px;
@@ -889,7 +945,7 @@ body {
             align-items: flex-end;
             justify-content: center;
             box-sizing: border-box;
-    
+
             p {
                 font-family: 'Inter';
                 font-style: normal;
@@ -899,10 +955,10 @@ body {
                 color: #FFFFFF;
                 text-align: center;
                 padding: 15px;
-                
+
             }
-    
+
         }
-    
+
     }
 }

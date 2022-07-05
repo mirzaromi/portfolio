@@ -45,6 +45,9 @@ header nav a li {
 header nav svg {
   display: none;
 }
+header .mobile-menu {
+  display: none;
+}
 
 body {
   background-color: #F5F5F5;
@@ -129,11 +132,13 @@ body p {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
+  margin-bottom: 2rem;
 }
 .skills .skills-flex .skills-content .skills-lists .skills-lists-flex {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  padding-right: 20px;
 }
 .skills .skills-flex .skills-content .skills-lists .skills-lists-flex .skills-lists-image {
   width: 50px;
@@ -317,6 +322,7 @@ body p {
 .contact .contact-container .contact-email form {
   position: relative;
   height: auto;
+  z-index: 0;
 }
 .contact .contact-container .contact-email form .email {
   width: 60%;
@@ -384,9 +390,9 @@ body p {
   font-size: 16px;
   line-height: 24px;
   display: inline;
-  z-index: 2;
+  z-index: 1;
   position: absolute;
-  right: 216px;
+  right: 20%;
   top: 9px;
 }
 
@@ -446,6 +452,7 @@ body p {
     height: 60px;
     background-color: #FFFFFF;
     color: #333;
+    z-index: 10;
   }
   header nav {
     height: inherit;
@@ -465,6 +472,43 @@ body p {
   }
   header nav svg {
     display: inline-block;
+  }
+  header .mobile-menu {
+    display: block;
+    width: 255px;
+    height: 100vh;
+    background-color: #36af9b;
+    z-index: 100;
+    top: 0px;
+    left: -255px;
+    padding: 5%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  header .mobile-menu h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  header .mobile-menu ul {
+    padding: 20px 0px;
+  }
+  header .mobile-menu ul a {
+    text-decoration: none;
+    color: white;
+  }
+  header .mobile-menu ul a li {
+    display: block;
+    list-style-type: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 20px;
   }
 
   body {
