@@ -20,7 +20,9 @@
 $text-color : #333;
 $background-color : #fff;
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0px;

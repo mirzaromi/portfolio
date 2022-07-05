@@ -905,6 +905,10 @@ header .mobile-menu {
     padding: 15px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   font-family: "Inria Serif", serif;
