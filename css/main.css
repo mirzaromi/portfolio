@@ -390,6 +390,56 @@ body p {
   top: 9px;
 }
 
+.footer {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 2.5% 15%;
+  background-color: #44DFC4;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-content h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+.footer .footer-content .footer-icon ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .footer-content .footer-icon ul li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 15px;
+}
+.footer .footer-content .footer-icon ul li svg {
+  width: 24px;
+}
+.footer .footer-copyrights {
+  margin: auto;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.footer .footer-copyrights p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px;
+}
+
 @media only screen and (max-width: 425px) {
   header {
     width: 100%;
