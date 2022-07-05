@@ -44,13 +44,19 @@
                     font-size: 18px;
                     line-height: 27px;
                     /* identical to box height */
-                    padding-left: 100px;
+                    padding-left: 50px;
                     text-align: left;
                     display: block;
                     margin: 0px 20%;
                     box-sizing: border-box;
                     color: #44DFC4
 
+                }
+
+                .email:focus {
+                    outline: none;
+                    border: 1px solid #3ab8a3;
+                    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
                 }
 
                 .email::placeholder {
@@ -82,7 +88,11 @@
                     z-index: 1;
                     position: absolute;
                     right: 20.5%;
-                    top: 7px;
+                    top: 5px;
+                }
+
+                button:hover {
+                    background-color: #3ab8a3;
                 }
             }
 

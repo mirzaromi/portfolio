@@ -36,5 +36,9 @@
         button {
             @include mixin.button(200px, 50px, 16px);
         }
+
+        button:hover {
+            background-color: #3ab8a3;
+        }
     }
 }

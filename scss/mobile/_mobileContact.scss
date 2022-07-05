@@ -44,11 +44,13 @@
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 27px;
+                        padding: 0px;
                         /* identical to box height */
 
                         text-align: center;
                         display: block;
                         margin: 0px 0px;
+                        
 
                     }
 
@@ -56,8 +58,8 @@
                         /* Chrome, Firefox, Opera, Safari 10.1+ */
                         color: #44DFC4 !important;
                         font-size: 14px;
-                        padding-left: 25%;
-                        text-align: left;
+                        padding-left: 0%;
+                        text-align: center;
                         opacity: 1;
                         /* Firefox */
                     }
@@ -66,16 +68,16 @@
                         /* Internet Explorer 10-11 */
                         color: #44DFC4 !important;
                         font-size: 14px;
-                        padding-left: 25%;
-                        text-align: left;
+                        padding-left: 0%;
+                        text-align: center;
                     }
 
                     .email::-ms-input-placeholder {
                         /* Microsoft Edge */
                         color: #44DFC4 !important;
                         font-size: 14px;
-                        padding-left: 25%;
-                        text-align: left;
+                        padding-left: 0%;
+                        text-align: center;
                     }
 
                     button {

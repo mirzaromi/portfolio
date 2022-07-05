@@ -1,7 +1,6 @@
 const hamburger = document.querySelector('#hamburger');
 const close = document.querySelector('#close');
 const mobileMenu = document.querySelector('.mobile-menu');
-console.log(mobileMenu);
 
 const hamburgerClick = () => {
         mobileMenu.style.left = '0px';

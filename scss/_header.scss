@@ -37,14 +37,27 @@ header {
             li {
                 display: inline;
                 list-style-type: none;
-                padding-right: 30px;
+                margin-left: 1rem;
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
                 color: $text-color;
+                padding: 0.5rem 0.75rem;
+                // box-sizing: content-box;
+            }
+
+            li:hover {
+                width: auto;
+                height: auto;  
+                // box-sizing: content-box;          
+                background-color: #44DFC4;
+                padding: 0.5rem 0.75rem;
+                border-radius: 10px;
+    
             }
         }
+
 
         svg {
             display: none;
