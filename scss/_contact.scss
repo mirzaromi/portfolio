@@ -1,0 +1,92 @@
+@use 'mixin';
+
+.contact {
+    @include mixin.section();
+    height: auto !important;
+    padding: 2.5% 5%;
+
+    h2 {
+        @include mixin.sectionTitle(18px);
+        text-align: center
+    }
+
+    .contact-container {
+
+        img {
+            width: 600px;
+            height: auto;
+            display: block;
+            margin: 3.5rem auto;
+        }
+
+        h1 {
+            @include mixin.sectionHeading(50px);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .contact-email {
+            form {
+                position: relative;
+                height: auto;
+                z-index: 0;
+
+                .email {
+                    width: 60%;
+                    height: 60px;
+                    background: #FFFFFF;
+                    border: 1px solid #E6F4F5;
+                    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+                    border-radius: 50px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    /* identical to box height */
+                    padding-left: 100px;
+                    text-align: left;
+                    display: block;
+                    margin: 0px 20%;
+                    box-sizing: border-box;
+                    color: #44DFC4
+
+                }
+
+                .email::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #44DFC4 !important;
+                    padding-left: 50px;
+                    text-align: left;
+                    opacity: 1;
+                    /* Firefox */
+                }
+
+                .email:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: #44DFC4 !important;
+                    padding-left: 50px;
+                    text-align: left;
+                }
+
+                .email::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: #44DFC4 !important;
+                    padding-left: 50px;
+                    text-align: left;
+                }
+
+                button {
+                    @include mixin.button(200px, 50px, 16px);
+                    display: inline;
+                    z-index: 1;
+                    position: absolute;
+                    right: 20.5%;
+                    top: 7px;
+                }
+            }
+
+
+        }
+    }
+}
