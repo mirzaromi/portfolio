@@ -312,6 +312,82 @@ body p {
   font-weight: 400;
   font-size: 50px;
   text-align: center;
+  margin-bottom: 3rem;
+}
+.contact .contact-container .contact-email form {
+  position: relative;
+  height: auto;
+}
+.contact .contact-container .contact-email form .email {
+  width: 60%;
+  height: 60px;
+  background: #FFFFFF;
+  border: 1px solid #E6F4F5;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  text-align: center;
+  display: block;
+  margin: 0px 20%;
+}
+.contact .contact-container .contact-email form .email::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #44DFC4 !important;
+  padding-left: 50px;
+  text-align: left;
+  opacity: 1;
+  /* Firefox */
+}
+.contact .contact-container .contact-email form .email:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #44DFC4 !important;
+  padding-left: 50px;
+  text-align: left;
+  opacity: 1;
+  /* Firefox */
+}
+.contact .contact-container .contact-email form .email::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #44DFC4 !important;
+  padding-left: 50px;
+  text-align: left;
+  opacity: 1;
+  /* Firefox */
+}
+.contact .contact-container .contact-email form .email:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #44DFC4 !important;
+  padding-left: 50px;
+  text-align: left;
+}
+.contact .contact-container .contact-email form .email::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #44DFC4 !important;
+  padding-left: 50px;
+  text-align: left;
+}
+.contact .contact-container .contact-email form button {
+  width: 200px;
+  height: 50px;
+  background: #44DFC4;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: inline;
+  z-index: 2;
+  position: absolute;
+  right: 216px;
+  top: 9px;
 }
 
 @media only screen and (max-width: 425px) {
@@ -591,5 +667,166 @@ body p {
     line-height: 24px;
     display: block;
     margin: auto;
+  }
+
+  .contact {
+    max-width: 1440px;
+    height: 94vh;
+    box-sizing: border-box;
+    margin: auto 10%;
+    background-color: #F5F5F5;
+    height: auto !important;
+    padding: 2.5% 5%;
+  }
+  .contact h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #44DFC4;
+    text-align: center;
+  }
+  .contact .contact-container img {
+    width: 100%;
+    height: auto;
+    display: none;
+    margin: 3.5rem auto;
+  }
+  .contact .contact-container h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .contact .contact-container .contact-email form {
+    height: 160px;
+    position: relative;
+  }
+  .contact .contact-container .contact-email form .email {
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #E6F4F5;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    text-align: center;
+    display: block;
+    margin: 0px 0px;
+  }
+  .contact .contact-container .contact-email form .email::-moz-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #44DFC4 !important;
+    font-size: 14px;
+    padding-left: 25%;
+    text-align: left;
+    opacity: 1;
+    /* Firefox */
+  }
+  .contact .contact-container .contact-email form .email:-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #44DFC4 !important;
+    font-size: 14px;
+    padding-left: 25%;
+    text-align: left;
+    opacity: 1;
+    /* Firefox */
+  }
+  .contact .contact-container .contact-email form .email::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #44DFC4 !important;
+    font-size: 14px;
+    padding-left: 25%;
+    text-align: left;
+    opacity: 1;
+    /* Firefox */
+  }
+  .contact .contact-container .contact-email form .email:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #44DFC4 !important;
+    font-size: 14px;
+    padding-left: 25%;
+    text-align: left;
+  }
+  .contact .contact-container .contact-email form .email::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #44DFC4 !important;
+    font-size: 14px;
+    padding-left: 25%;
+    text-align: left;
+  }
+  .contact .contact-container .contact-email form button {
+    width: 150px;
+    height: 40px;
+    background: #44DFC4;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    position: absolute;
+    left: 26%;
+    top: 80px;
+  }
+
+  .footer {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5% 15%;
+    background-color: #44DFC4;
+  }
+  .footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footer-content h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FFFFFF;
+  }
+  .footer .footer-content .footer-icon ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .footer-content .footer-icon ul li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 15px;
+  }
+  .footer .footer-content .footer-icon ul li svg {
+    width: 24px;
+  }
+  .footer .footer-copyrights {
+    margin: auto;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .footer .footer-copyrights p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
   }
 }/*# sourceMappingURL=main.css.map */
