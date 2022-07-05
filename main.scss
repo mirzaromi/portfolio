@@ -6,13 +6,13 @@
 @use 'scss/portfolio';
 @use 'scss/skills';
 @use 'scss/mixin';
-@use 'scss/mobile/header' as mobileHeader;
-@use 'scss/mobile/home' as mobileHome;
-@use 'scss/mobile/skills' as mobileSkills;
-@use 'scss/mobile/portfolio' as mobilePortfolio;
-@use 'scss/mobile/client' as mobileClient;
-@use 'scss/mobile/contact' as mobileContact;
-@use 'scss/mobile/footer' as mobileFooter;
+@use 'scss/mobile/mobileHeader' as mobileHeader;
+@use 'scss/mobile/mobileHome' as mobileHome;
+@use 'scss/mobile/mobileSkills' as mobileSkills;
+@use 'scss/mobile/mobilePortfolio' as mobilePortfolio;
+@use 'scss/mobile/mobileClient' as mobileClient;
+@use 'scss/mobile/mobileContact' as mobileContact;
+@use 'scss/mobile/mobileFooter' as mobileFooter;
 
 
 
@@ -48,21 +48,11 @@ body {
 
 @media only screen and (max-width: 425px) {
     
-    mobileHeader{};
+    
 
     body {
         background-color: #F5F5F5;
     }
-
-    mobileHome{};
-
-    mobileSkills{};
-
-    mobilePortfolio{};
-
-    mobileClient{};
-
-    mobileContact{};
 
     
 }
