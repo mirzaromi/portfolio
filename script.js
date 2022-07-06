@@ -18,8 +18,9 @@ hamburger.addEventListener("click", hamburgerClick);
 close.addEventListener("click", closeClick);
 
 window.addEventListener('mouseup', function(event){
+        let w = window.innerWidth;
 	const box = document.getElementById('mobile-menu');
-	if (event.target != box && event.target.parentNode != box){
+	if (event.target != box && event.target.parentNode != box && w<=425){
         mobileMenu.style.left = '-255px';
         hamburger.style.display = 'block';
         close.style.display = 'none';
