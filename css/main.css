@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: auto 10%;
   background-color: #F5F5F5;
+  height: auto !important;
   padding: 2.5% 5%;
   background: url("../images/bg.png"), #F5F5F5 !important;
 }
@@ -231,6 +232,7 @@ header {
   background-color: #FFFFFF;
   color: #333;
   position: sticky;
+  position: -webkit-sticky;
   top: 0px;
 }
 header nav {

@@ -2,7 +2,7 @@
 
 .client {
     @include mixin.section();
-    // height: auto !important;
+    height: auto !important;
     padding: 2.5% 5%;
     background: url('../images/bg.png'), #F5F5F5 !important;
 
